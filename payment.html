@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <div class="logo">
+                <img src="image/logo-mytour.webp">
+            </div>
+            <div class="item-menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-percent"></i> Ưu đãi</a></li>
+                    <li><a href="#"><i class="fas fa-hotel"></i> Khách sạn</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Tour</a></li>
+                    <li><a href="#"><i class="fas fa-book-open"></i> Cẩm nang du lịch</a></li>
+                </ul>
+            </div>
+            <ul class="icon-menu">
+                <li class="phone">
+                    <div class="wrappera">
+                        <img src="image/icon-phone-grp.webp">
+                        <div class="help">
+                            <p class="first"><strong>Hà Nội:</strong> 024 7109 9999</p>
+                            <p><strong>TPHCM:</strong> 028 7109 9998</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="icon"><a href="#"><i class="far fa-comments"></i></a></li>
+                <li class="icon"><a href="#"><i class="far fa-bell"></i></a></li>
+                <li class="icon login"><a class="user" href="#"><i class="us far fa-user"></i><i
+                            class="us fas fa-chevron-down"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="pay-container">
+        <div class="contact">
+            <p class="title-book">Thông Tin Liên Hệ</p>
+            <form action="" onsubmit="validate()">
+                <p>Họ và tên </p>
+                <input onkeyup="validate()" id="name" type="text" name="name">
+
+                <p>Số điện thoại </p>
+                <input onkeyup="validate()" id="phone" type="text" name="phone">
+
+                <p>Email </p>
+                <input onkeyup="validate()" id="email" type="text" name="email">
+
+                <p>Địa chỉ </p>
+                <input onkeyup="validate()" id="address" type="text" name="address">
+
+                <p>Ngày sinh</p>
+                <input onkeyup="validate()" id="birthdate" type="date" name="birthdate">
+
+            </form>
+        </div>
+        <div class="contact">
+            <p class="title-book">Thông Tin Đặt Tour</p>
+            <div class="pay">
+                <img src="image/info1.webp" alt="">
+                <p class="name">Tour Du Lịch Đà Lạt Thác Voi - Làng Nghề 1 Ngày</p>
+                <p><strong>Khởi hành:</strong> &nbsp; ngày 04/06/2019</p>
+                <p><strong>Số phiếu:</strong> &nbsp; <input type="number"></p>
+                <form action="">
+                    <p class="title-top">Thông Tin Thanh Toán</p>
+                    <p class="title-bottom">Tour Du Lịch Đà Lạt Thác Voi - Làng Nghề 1 Ngày</p>
+                    <div class="cal">
+                        <span>2 phiếu</span>
+                        <span>x</span>
+                        <span>300,000 đ</span>
+                        <span>=</span>
+                        <span>600,000 đ</span>
+                    </div>
+                    <div class="total">
+                        <span>Tổng số tiền</span>
+                        <span>600,000 đ</span>
+                    </div>
+                </form>
+                <!-- <input type="submit" value="HOÀN THÀNH"> -->
+                <button class="complete" type="submit">HOÀN THÀNH</button>
+            </div>
+        </div>
+        <div class="contact">
+            <p class="title-book">Gửi Đơn Đặt Tour</p>
+            <p class="tb"><a href="#">Bạn muốn tìm tour khác?</a></p>
+            <span>Lưu ý:</span>
+            <ul>
+                <li>Quý khách có thể thanh toán trước bằng thẻ <a href="#">tại đây</a>.</li>
+                <li>Mytour sẽ liên hệ với quý khách (qua email hoặc điện thoại) trong vòng <strong>30 phút</strong> (T2-CN: 08:00 -
+                    23:00) để xác nhận tour và thời hạn thanh toán.</li>
+                <li>Quý khách sẽ thanh toán (tại nhà, tại Mytour, chuyển khoản hay thẻ) sau khi có xác nhận còn tour từ Mytour.</li>
+                <li>Trường hợp Quý khách muốn xác nhận ngay, vui lòng liên hệ với Mytour theo Hotline: </li>
+                <p><strong>Hà Nội: 024 7109 9999 </strong></p>
+                <p><strong>Hồ Chí Minh: 028 7109 9998</strong></p>
+            </ul>
+            <div class="logo-pay">
+                <img src="image/ico_dam_bao_hoan_tien.webp" alt="">
+            </div>
+            <div class="logo-bot">
+                    <img src="image/logo-congthuong-w165.webp" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="validate.js"></script>
+</html>

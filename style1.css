@@ -1,0 +1,849 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: #fff; */
+}
+.navbar{
+    box-shadow: 0px -4px 13px 1px #888888;
+    overflow: hidden;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+}
+.item-menu{
+    display: inline-block;
+    padding: 25px;
+    overflow: hidden;
+}
+.item-menu > ul{
+    list-style-type: none;
+}
+.item-menu > ul > li{
+    padding: 0 15px;
+    float: left;
+    position: relative;
+}
+.item-menu > ul > li > a{
+    text-decoration: none;
+    color: rgb(180, 175, 175);
+}
+.item-menu > ul > li > a:hover{
+    color: #00bcd4;
+    text-underline-position:#00bcd4;
+}
+.item-menu > ul > li a:before{
+    content: '';
+    width: 0px;
+    height: 5px;
+    background: #00bcd4;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.item-menu > ul > li:hover a:before{
+    width: 100%;
+}
+.icon-menu{
+    padding: 5px 0;
+    display: inline-block;
+    overflow: hidden;
+    list-style-type: none;
+}
+.icon-menu > li{
+    padding: 7px 15px;
+    float: left;
+}
+.icon-menu > li > a{
+    color: rgb(194, 190, 190);
+    font-size: 20px;
+}
+.wrappera{
+    display: inline-block;
+}
+.wrappera > img{
+    position: absolute;
+    width: 42px;
+    float: left;
+    border-radius: 50%;
+}
+.help{
+    float: left;
+    padding: 6px 30px;
+    font-size: 13px;
+    border-radius: 15px;
+    margin: 0 15px;
+    background-color: rgb(237,244,252);
+}
+.help > p, .help > p > strong{
+    background-color: rgb(237,244,252);
+    font-size: 13px;
+}
+.phone > .img{
+    /* position: absolute; */
+    width: 35px;
+    height: 35px;
+    left: 30%;
+}
+.phone > .img > img{
+    width: 100%;
+}
+.icon-menu > .icon{
+    padding: 18px 14px;
+}
+.icon-menu > .login{
+    background-color: dodgerblue;
+    padding: 10px 25px;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+.icon-menu > .login > a,.icon-menu > .login > a > i{
+    background-color: dodgerblue;
+}
+.search-detail{
+    padding: 10px;
+    background-color: rgb(53,64,82);
+}
+.detail{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.detail > form{
+    padding: 10px;
+    overflow: hidden;
+}
+.detail > form > input[type=text]{
+    float: left;
+    padding: 12px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    width: 35%;
+    outline: none;
+}
+.detail > form > .input-detail{
+    float: left;
+    border-radius: 5px;
+    width: 20%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+}
+.detail > form > .input-detail > .input-1{
+    border-radius: 5px 0 0 5px;
+}
+.detail > form > .input-detail > .input-2{
+    border-radius: 0 5px 5px 0;
+}
+.detail > form > .input-detail > input[type=date]{
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+}
+.detail > form > .input-detail > input[type=text]{
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    outline: none;
+}
+.detail > form > button{
+    float: left;
+    width: 25%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: chartreuse;
+    cursor: pointer;
+
+}
+.main-container{
+    overflow: hidden;
+    padding: 20px 0;
+    width: 85%;
+    margin: 0 auto;
+}
+.main-container > a{
+    font-weight: 700;
+    padding: 10px 0;
+    color: rgb(77, 74, 74);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.main-container > a:hover{
+    color: dodgerblue;
+}
+.main-container > p, .main-container > p > a{
+    padding: 10px 0;
+    font-size: 13px;
+    text-decoration: none;
+}
+.main-container > p > a{
+    color: dodgerblue;
+}
+.main-search{
+    padding: 20px 0;
+    overflow: hidden;
+    width: 27%;
+    float: left;
+}
+.search-left{
+    margin-bottom: 15px;
+    border: 1px solid rgb(226, 221, 221);
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+}
+.search-left > h4{
+    background-color: rgb(211, 232, 240);
+    padding: 14px;
+    color: rgb(77, 74, 74);
+    border-radius: 5px 5px 0 0;
+}
+.search-content{
+    padding: 15px;
+    width: 100%;
+}
+.search-content > input[type=text]{
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border:1px solid gray;
+    outline-color: hotpink;
+}
+.search-content > .search-date{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+}
+.search-content > p{
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.search-content > .search-date > input[type=date]{
+    width: 50%;
+    padding: 10px;   
+}
+.search-content > button{
+    width: 100%;
+    background-color: rgb(255,210,31);
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(77, 74, 74);
+}
+.search-content > button:hover{
+    background-color: rgb(255,255,0);
+}
+.search-left > .list{
+    padding: 10px 0;
+}
+.search-left > hr{
+    margin: 0 15px;
+}
+.list > ul{
+    list-style-type: none;
+}
+.list > ul > li{
+    position: relative;
+    /* display: inline-block; */
+    margin-bottom: 5px;
+    background-color: #00bcd4;
+}
+.list > ul > li > p{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: red;
+}
+.wrapperbtn{
+    background-color: red;
+}
+.dropbtn{
+    /* margin-bottom: 15px; */
+    width: 100%;
+    margin-left: 5px;
+    background-color: rgb(233,243,247);
+    color: rgb(78, 76, 76);
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+} 
+.list > ul > .dropdown{
+    width: 100%;
+    background-color: rgb(185,225,240);
+    margin-bottom: 5px;
+    overflow: hidden;
+    /* position: relative; */
+    /* display: inline-block; */
+} 
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+}
+.dropdown-content a {
+    font-size: 14px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}  
+.dropdown-content a:hover {color: dodgerblue;}
+.show {display: block;} 
+/* .dropdown:hover .dropdown-content {
+    display: block;
+}  */
+/* .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+} */
+.info-promotion{
+    overflow: hidden;
+    padding: 15px;
+}
+.image-promotion{
+    float: left;
+    width: 30%;
+}
+.image-promotion > img{
+    width: 100%;
+    border-radius: 5px;
+}
+.info{
+    float: left;
+    width: 70%;
+    padding: 0 0 0 15px;
+    font-size: 15px;
+}
+.info > a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 14px;
+}
+.info > .price{
+    font-size: 13px;
+    margin: 5px 0;
+}
+.info > .price > strong{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(76, 175, 80);
+}
+.info > .promotion{
+    font-size: 13px;
+    color: red;
+}
+.main-detail{
+    float: left;
+    width: 73%;
+    padding: 20px 0;
+}
+.main-head{
+    overflow: hidden;
+    padding: 10px 0px 10px 20px;
+}
+.main-head > a, .info-left > a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 25px;
+}
+.main-head > a:hover,.main-head > ul > li > a:hover{
+    color: rgb(70, 70, 245);
+}
+.main-head > div{
+    background-color: rgb(255, 239, 176);
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.main-head > ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+.main-head > ul > li{
+    padding: 10px;
+    float: left;
+}
+.main-head > ul > li > a{
+    text-decoration: none;
+    font-size: 14px;
+    color: dodgerblue;
+}
+.main-info{
+    overflow: hidden;
+}
+.info-left{
+    width: 78%;
+    float: left;
+    padding: 10px 20px;
+}
+.info-left > a{
+    font-weight: 700;
+    font-size: 20px;
+}
+.info-detail{
+    padding: 10px 0;
+    overflow: hidden;
+}
+.info-img{
+    font-size: 13px;
+    float: left;
+    width: 45%;
+}
+.info-img > a > img{
+    width: 100%;
+    border-radius: 5px;
+}
+.info-img > p > a > i{
+    color: dodgerblue;
+    margin-right: 5px;
+}
+.info-go{
+    float: left;
+}
+.info-go > ul{
+    padding: 5px 10px;
+}
+.info-go > ul > li{
+    margin-bottom: 5px;
+    list-style-type: none;
+    font-size: 13px;
+}
+.info-go > ul > .icon{
+    margin-top: 10px;
+}
+.info-go > ul > li > i{
+    color: #3e8e41;
+    margin-right: 5px;
+}
+.info-right{
+    margin-top: 15px;
+    float: left;
+    width: 22%;
+}
+.info-right > .top{
+    border-radius: 5px 5px 0 0;
+    height: 75px;
+    background-color: rgb(245,245,245);
+}
+.info-right > .bottom{
+    position: relative;
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(233,243,247);
+    height: 125px;
+}
+.bottom > p{
+    top: 30px;
+    font-size: 25px;
+    color: rgb(76,175,80);
+    position: absolute;
+    right: 10px;
+    font-weight: 700;
+}
+.bottom > button{
+    padding: 15px;
+    background-color: rgb(255,210,31);
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.bottom > button:hover{
+    background-color: rgb(255, 255, 0);
+}
+.bottom > button > a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.main-content > hr{
+    margin: 0 0 10px 20px;
+}
+.main-heado{
+    padding-left: 20px;
+}
+.main-heado > p{
+    font-size:23px;
+    color: rgb(92, 90, 90);
+    margin-bottom: 15px;
+}
+.img-child{
+    display: flex;
+    justify-content: flex-start;
+}
+.img-child > img{
+    width: 100px;
+    height: 75px;
+    margin: 5px 5px 5px 0;
+}
+.tourid{
+    border: 1px solid rgb(187, 183, 183);
+    overflow: hidden;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 15px 0;
+}
+.tourid > .tour-left,.tourid > .tour-right{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+.tourid > .tour-right{
+    width: 50%;
+}
+.tourid > .tour-left{
+    text-align: right;
+    font-weight: bold;
+}
+.tourid > .book{
+    position: relative;
+    padding: 15px;
+    width: 25%;
+    float: left;
+}
+.book > p{
+    position: absolute;
+    right: 15px;
+    /* margin-bottom: 15px; */
+    font-size: 30px;
+    font-weight: 600;
+    color: #3e8e41;
+}
+.book > button{
+    box-shadow: 0px 3px 4px rgb(0,144,196), 0px 0px 0px rgb(0,144,196);
+    position: absolute;
+    right: 15px;
+    top: 45px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #00bcd4;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.book > button:hover{
+    background-color: rgb(46,188,240);
+}
+.book > button > a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.box-title{
+    margin: 15px 0;
+    border:1px solid rgb(187, 183, 183);
+    border-radius: 5px;
+}
+.box-title > p{
+    padding: 15px;
+    font-size: 14px;
+    color: rgb(92, 90, 90);
+    line-height: 20px;
+}
+.box-title > .title{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(92, 90, 90);
+    background-color: rgb(211,232,240);
+    border-bottom: 1px solid rgb(187, 183, 183);
+}
+.pay-container{
+    width: 90%;
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: nowrap;
+}
+.pay-container > .contact{
+    border: 1px solid rgb(201, 198, 198);
+    border-radius: 5px;
+    width: 33.3%;
+    margin: 0 10px;
+}
+.contact > .title-book{
+    border-radius: 5px 5px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: dodgerblue;
+    padding: 15px;
+    color: white;
+}
+.contact >form, .pay{
+    padding: 15px;
+}
+.contact > form > p{
+    margin-bottom: 5px;
+}
+.contact > form > input[type=text], .contact > form > input[type=date]{
+    background-image: none;
+    padding: 7px;
+    border: 1px solid rgb(146, 145, 145);
+    margin-bottom: 15px;
+    width: 100%;
+}
+.pay > img{
+    width: 100%;
+    height: 185px;
+}
+.pay > .name{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(92, 90, 90);
+}
+.pay > p{
+    padding: 7px 0;
+    font-size: 13px;
+}
+.pay > p > strong{
+    color: rgb(32, 32, 228);
+}
+.pay > p > input[type=number]{
+    width: 20%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 190, 190);
+}
+.pay > form{
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 190, 190);
+}
+.pay > form > .cal,.pay > form > .total{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(192, 190, 190);
+}
+.pay > form > .cal > span,.pay > form > .total > span{
+    font-size: 12px;
+    margin: 5px 18px;
+}
+.pay > form > .total > span{
+    margin: 10px 18px;
+}
+.pay > form > .total{
+    background-color: rgb(234,245,251);
+    margin-bottom: 20px;
+}
+.pay > form > .title-top{
+    padding: 10px;
+    border: 5px 5px 0 0;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+.pay > form > .title-bottom{
+    padding: 10px;
+    background-color: rgb(250,251,253);
+    color: rgb(0,67,92);
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(192, 190, 190); 
+}
+.pay > .complete{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(94, 92, 92);
+    background-color: #ffea00;
+    border: 1px solid #ffd21f;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.pay > .complete:hover{
+    background-color: rgb(255,255,0);
+}
+.contact > .tb{
+    text-align: center;
+    padding: 15px;
+}
+.contact > .tb > a{
+    text-decoration: none;
+    color: #00bcd4;
+    font-size: 18px;
+}
+.contact > .tb > a:hover,.contact > ul > li > a:hover{
+    color: #192eee;
+}
+.contact > span{
+    color: red;
+    font-weight: 600;
+    padding: 0 15px;
+    font-size: 14px;
+}
+.contact > ul{
+    padding: 0 35px;
+}
+.contact > ul > li{
+    margin: 10px 0;
+    font-size: 13px;
+    /* padding: 0 30px; */
+}
+.contact > ul > li > a{
+    text-decoration: none;
+    color: #00bcd4;
+}
+.contact > ul > li > strong{
+    color: rgb(76, 175, 80);
+    font-size: 17px;
+}
+.contact > ul > p{
+    font-size: 14px;
+}
+.contact > .logo-pay {
+    margin: 15px auto;
+    width: 75%;
+}
+.contact > .logo-pay > img,.contact > .logo-bot > img{
+    width: 100%;
+}
+.contact > .logo-bot{
+    width: 45%;
+    margin: 0 auto;
+}
+.wrap-container{
+    padding: 40px 0;
+}
+.info-container, .form-info{
+    width: 80%;
+    margin: 25px auto;
+    color: rgb(73, 70, 70);
+}
+.info-container > h3{
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 25px;
+}
+.info-container > p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.form-info{
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid rgb(163, 162, 162);
+}
+.form-info > .title > p{
+    border-radius: 5px 5px 0 0;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #8fe3ee;
+}
+.info-tour{
+    width: 100%;
+}
+.info-left,.info-right{
+    float: left;
+    width: 50%;
+}
+.info-right{
+    padding-right: 15px;
+}
+.info-check-tour > h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.info-check-tour > .id{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15px 0;
+    color: rgb(107, 107, 107);
+}
+.info-check-tour > .id > .idtop{
+    width: 30%;
+}
+
+.info-check-tour > .id > .idbot{
+    width: 70%;
+}
+.info-check-tour > .id > ul > li{
+    list-style-type: none;
+    line-height: 20px;
+    font-size: 14px;
+}
+.border{
+    border: 2px dashed dodgerblue;
+    padding: 10px;
+    overflow: hidden;
+}
+.border > .border-h,.border > .price {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+.border > .price{
+    overflow: hidden;
+    width: 100%;
+}
+.border > .price > span,.border > .total-price > span{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.border > .price > .price-bot,.border > .total-price > .price-bot{
+    text-align: right;
+}
+.border > .total-price{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(166, 242, 243);
+    overflow: hidden;
+}
+.back{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.back > a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 15px;
+    font-weight: 600;
+}
+.back > a > i{
+    margin-right: 5px;
+}
+.back > a:hover{
+    color: rgb(70, 70, 247);
+}
+.wrap-container > h4,.wrap-container > hr, .wrap-container > .hotel{
+    width: 80%;
+    margin: 0 auto;
+}
+.wrap-container > h4{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(95, 94, 94);
+    font-size: 15px;
+}
